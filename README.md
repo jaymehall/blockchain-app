@@ -12,7 +12,7 @@ This application builds and deploys an ERC20 token in compliance with EIP standa
 - [License](#license)
 - [Tests](#tests)
 - [Next Steps](#next-steps)
-- [Questions](#questions)
+- [About the Creator](#about-the-creator)
 
 ## Installation
 
@@ -67,10 +67,10 @@ truffle test
 
 No further work planned at this time.
 
-## Questions
+## About the Creator
 
-For additional questions please contact:
+Built to explore ERC20 token standards and decentralized exchange mechanics with Solidity and Truffle.
 
-- Jayme Hall
-- GitHub: [https://github.com/jaymehall/](https://github.com/jaymehall/)
-- LinkedIn: [https://www.linkedin.com/in/jayme-hall/](https://www.linkedin.com/in/jayme-hall/)
+- LinkedIn: https://www.linkedin.com/in/jayme-hall/
+- GitHub: https://github.com/jaymehall/
+- Website: [https://jaymehall-dev.netlify.app/](https://jaymehall-dev.netlify.app/)
