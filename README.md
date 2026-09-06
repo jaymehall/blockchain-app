@@ -2,7 +2,7 @@
 
 ## Description
 
-This application builds and deploys an ERC20 token in compliance with EIP standards, along with an exchange for trading it. It uses two Solidity smart contracts — one for the token, one for the exchange — with a React front end using Redux for global state management.
+This application builds and deploys an ERC20 token in compliance with EIP standards, along with an exchange for trading it. It uses two Solidity smart contracts: one for the token, one for the exchange. The front end is built with React, using Redux for global state management.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ This application builds and deploys an ERC20 token in compliance with EIP standa
 
 ## How It Works
 
-The `Exchange` contract (`src/contracts/Exchange.sol`) holds user balances directly — depositing credits an internal `tokens[token][user]` mapping rather than moving funds on every trade, so orders settle with a single internal transfer instead of two on-chain approvals per trade:
+The `Exchange` contract (`src/contracts/Exchange.sol`) holds user balances directly. Depositing credits an internal `tokens[token][user]` mapping rather than moving funds on every trade, so orders settle with a single internal transfer instead of two on-chain approvals per trade:
 
 ```mermaid
 flowchart TD
@@ -36,7 +36,7 @@ flowchart TD
     BAL -->|"Token.transfer()"| TOKEN["Token contract (FTN)"]
 ```
 
-The settlement itself — the part that actually moves balances and takes a fee — is one function:
+The settlement itself is a single function. It's the part that actually moves balances and takes a fee:
 
 ```solidity
 function _trade(uint256 _orderId, address _user, address _tokenGet, uint256 _amountGet, address _tokenGive, uint256 _amountGive) internal {
